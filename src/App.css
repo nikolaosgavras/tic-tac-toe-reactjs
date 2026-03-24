@@ -1,0 +1,89 @@
+.game {
+  padding: 24px;
+  border: 2px solid var(--line);     /* main outline */
+  outline: 4px solid #ffffff;        /* extra frame */
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--accent);
+}
+
+.new-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.new-game-button{
+  padding: 10px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: var(--ink);
+  border: 2px solid;
+  border-color: var(--ink);
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.new-game-button:hover{
+  box-shadow: 0 6px 14px rgba(15, 118, 110, 0.18);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.new-game-button:active{
+  box-shadow: 0 6px 14px rgba(15, 118, 110, 0.18);
+  border-color: var(--accent);
+  transform: translateY(0px);
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 72px;
+  height: 72px;
+  margin: 3px;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+.square:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  box-shadow: 0 6px 14px rgba(15, 118, 110, 0.18);
+}
+
+.square:active {
+  transform: translateY(0);
+}
+
+/*
+@media (max-width: 520px) {
+  .game-shell {
+    padding: 16px;
+  }
+
+  .square {
+    width: 62px;
+    height: 62px;
+    font-size: 26px;
+  }
+}
+*/
